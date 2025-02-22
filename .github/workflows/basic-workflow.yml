@@ -40,7 +40,14 @@ jobs:
 
     # The type of runner that the job will run on, in this case a Linus hosted runner
     runs-on:
-      - ubuntu-latest
+      description: "Select Label"
+      required: true
+      default: "Tupelo"
+      type: choice
+       options:
+        - ubuntu-latest
+        - ubuntu-latest1
+        - ubuntu-latest2
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
