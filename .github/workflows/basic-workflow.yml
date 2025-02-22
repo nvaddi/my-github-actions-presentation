@@ -27,7 +27,10 @@ jobs:
   greet:
     name: "Greetings, Program!"
     runs-on:
-      - ubuntu-latest
+      group: choice
+      labels:
+        - ubuntu-latest
+        - ubuntu-latest2
 
     steps:
       - name: Send greeting
